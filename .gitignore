@@ -1,0 +1,11 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Binary embedding & logit caches (reproducible from scripts)
+experiments/cache/*.npz
+
+# Jupyter / environment secrets
+.ipynb_checkpoints/
+.env
