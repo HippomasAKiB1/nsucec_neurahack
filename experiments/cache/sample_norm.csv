@@ -1,0 +1,61 @@
+id,label,raw,denoised,glossed,en_norm
+1,1,Raat e 3 km er jonno 100 taka chaise,Raat e 3 km er jonno 100 taka chaise,demanded 100 taka money fare for 3 km at night,demanded 100 taka money fare for 3 km at night
+2,3,বাসে তেলাপোকা দেখেছি,বাসে তেলাপোকা দেখেছি,বাসে তেলাপোকা দেখেছি,saw cockroaches on the bus
+3,1,"Student fare দিল না, ID দেখালাম তবুও","Student fare দিল না, ID দেখালাম তবুও","Student fare দিল না, ID দেখালাম তবুও",did not give student half fare even after showing id
+4,2,Night এ bus এ safe লাগে না,Night এ bus এ safe লাগে না,Night এ bus এ safe লাগে না,it does not feel safe on the bus at night
+5,1,কন্ডাক্টর অতিরিক্ত ভাড়া নিয়েছে,কন্ডাক্টর অতিরিক্ত ভাড়া নিয়েছে,কন্ডাক্টর অতিরিক্ত ভাড়া নিয়েছে,conductor charged extra excessive fare
+6,0,Office e late hoye gelam bus er jonno,Office e late hoye gelam bus er jonno,got late to the office because of the bus,got late to the office because of the bus
+7,0,The bus was an hour late again today,The bus was an hour late again today,The bus was an hour late again today,The bus was an hour late again today
+8,5,"Bus e amar bag haraye gese, kothay khuji?","Bus e amar bag haraye gese, kothay khuji?","lost my bag on the bus, where can i find it?","lost my bag on the bus, where can i find it?"
+9,4,কন্ডাক্টর খুব খারাপ ব্যবহার করেছে,কন্ডাক্টর খুব খারাপ ব্যবহার করেছে,কন্ডাক্টর খুব খারাপ ব্যবহার করেছে,conductor behaved very rudely
+10,2,Doors were open while the bus was moving,Doors were open while the bus was moving,Doors were open while the bus was moving,Doors were open while the bus was moving
+11,5,বসুন্ধরায় নতুন রুট চালু করুন,বসুন্ধরায় নতুন রুট চালু করুন,বসুন্ধরায় নতুন রুট চালু করুন,please start a new route in bashundhara
+12,4,Mohilader seat e purush bose thake,Mohilader seat e purush bose thake,men sit in the seats reserved for women,men sit in the seats reserved for women
+13,2,The driver was driving dangerously and overtaking recklessly,The driver was driving dangerously and overtaking recklessly,The driver was driving dangerously and overtaking recklessly,The driver was driving dangerously and overtaking recklessly
+14,4,Driver skipped stops without any reason,Driver skipped stops without any reason,Driver skipped stops without any reason,Driver skipped stops without any reason
+15,0,বাস আজকেও এক ঘণ্টা দেরি করেছে,বাস আজকেও এক ঘণ্টা দেরি করেছে,বাস আজকেও এক ঘণ্টা দেরি করেছে,bus was an hour late again today
+16,2,Pickpockets were active on the bus today,Pickpockets were active on the bus today,Pickpockets were active on the bus today,Pickpockets were active on the bus today
+17,3,Bus er seat gula onek moila,Bus er seat gula onek moila,the bus seats are very dirty,the bus seats are very dirty
+18,4,"এসি বন্ধ ছিল, বাসে খুব গরম","এসি বন্ধ ছিল, বাসে খুব গরম","এসি বন্ধ ছিল, বাসে খুব গরম","ac was off, very hot on the bus"
+19,2,The bus almost hit a rickshaw because of speeding,The bus almost hit a rickshaw because of speeding,The bus almost hit a rickshaw because of speeding,The bus almost hit a rickshaw because of speeding
+20,5,Lost and found এর contact number কি?,Lost and found এর contact number কি?,Lost and found এর contact number কি?,what is the contact number for lost and found ?
+21,3,Bus এর ভেতরে garbage ছড়ানো,Bus এর ভেতরে garbage ছড়ানো,Bus এর ভেতরে garbage ছড়ানো,garbage is scattered inside the bus
+22,1,Bhara na janiye bariye disse,Bhara na janiye bariye disse,increased the fare without any notice,increased the fare without any notice
+23,1,Fare chart er cheye beshi nichche,Fare chart er cheye beshi nichche,charging more than the official fare chart,charging more than the official fare chart
+24,3,বাস স্টপে ময়লার স্তূপ জমে আছে,বাস স্টপে ময়লার স্তূপ জমে আছে,বাস স্টপে ময়লার স্তূপ জমে আছে,pile of garbage accumulated at the bus stop
+25,3,"The bus smelled terrible, like rotten fish","The bus smelled terrible, like rotten fish","The bus smelled terrible, like rotten fish","The bus smelled terrible, like rotten fish"
+26,5,Ei form ta test korchi,Ei form ta test korchi,just testing this feedback form,just testing this feedback form
+27,0,Jam er karone class miss hoilo,Jam er karone class miss hoilo,missed class because of traffic traffic jam,missed class because of traffic traffic jam
+28,0,"Waiting time টা অনেক বেশি, please fix","Waiting time টা অনেক বেশি, please fix","Waiting time টা অনেক বেশি, please fix","the waiting time is way too long, please fix"
+29,4,Counter er lok kotha i shunlo na,Counter er lok kotha i shunlo na,the counter staff did not listen at all,the counter staff did not listen at all
+30,5,The bus stop name sign is missing,The bus stop name sign is missing,The bus stop name sign is missing,The bus stop name sign is missing
+31,3,There was garbage all over the floor,There was garbage all over the floor,There was garbage all over the floor,There was garbage all over the floor
+32,2,Bus e meyeder harass kora hoy,Bus e meyeder harass kora hoy,women are harassed on the bus,women are harassed on the bus
+33,2,চলন্ত বাসের দরজা খোলা ছিল,চলন্ত বাসের দরজা খোলা ছিল,চলন্ত বাসের দরজা খোলা ছিল,doors were open while the bus was moving
+34,1,২০ টাকার ভাড়া ৪০ টাকা নিল,২০ টাকার ভাড়া ৪০ টাকা নিল,২০ টাকার ভাড়া ৪০ টাকা নিল,charged 40 taka money for a 20 taka money fare
+35,2,"Driver onek speed e bus chalay, voy lage","Driver onek speed e bus chalay, voy lage","the driver drives the bus very fast, it feels scary","the driver drives the bus very fast, it feels scary"
+36,5,Suggest installing live bus tracking,Suggest installing live bus tracking,Suggest installing live bus tracking,Suggest installing live bus tracking
+37,1,Bkash payment failed but money was deducted,Bkash payment failed but money was deducted,Bkash payment failed but money was deducted,Bkash payment failed but money was deducted
+38,5,উত্তরা থেকে মতিঝিল যাওয়ার শেষ বাস কয়টায়?,উত্তরা থেকে মতিঝিল যাওয়ার শেষ বাস কয়টায়?,উত্তরা থেকে মতিঝিল যাওয়ার শেষ বাস কয়টায়?,what time is the last bus from uttara to motijheel?
+39,4,The helper misbehaved with an elderly passenger,The helper misbehaved with an elderly passenger,The helper misbehaved with an elderly passenger,The helper misbehaved with an elderly passenger
+40,1,They took double the official fare during the rain,They took double the official fare during the rain,They took double the official fare during the rain,They took double the official fare during the rain
+41,3,The bus seats were covered in dust and stains,The bus seats were covered in dust and stains,The bus seats were covered in dust and stains,The bus seats were covered in dust and stains
+42,0,শেষ বাসটা আবার মিস করেছি,শেষ বাসটা আবার মিস করেছি,শেষ বাসটা আবার মিস করেছি,missed the last bus again
+43,0,Bus broke down midway and we were delayed a lot,Bus broke down midway and we were delayed a lot,Bus broke down midway and we were delayed a lot,Bus broke down midway and we were delayed a lot
+44,3,Cockroaches on the seat!,Cockroaches on the seat!,Cockroaches on the seat!,Cockroaches on the seat!
+45,5,"The new bus app is great, thank you","The new bus app is great, thank you","The new bus app is great, thank you","The new bus app is great, thank you"
+46,4,"Driver stop এ bus থামায়নি, ignore করল","Driver stop এ bus থামায়নি, ignore করল","Driver stop এ bus থামায়নি, ignore করল",driver did not stop the bus at the stop and ignored
+47,2,বাসে মেয়েকে উত্ত্যক্ত করা হয়েছে,বাসে মেয়েকে উত্ত্যক্ত করা হয়েছে,বাসে মেয়েকে উত্ত্যক্ত করা হয়েছে,a girl was harassed on the bus
+48,0,"Stuck in traffic for two hours, missed my class","Stuck in traffic for two hours, missed my class","Stuck in traffic for two hours, missed my class","Stuck in traffic for two hours, missed my class"
+49,3,"Bus e pocha gondho, nishash nite parlam na","Bus e pocha gondho, nishash nite parlam na","the bus had a rotten smell, could not breathe","the bus had a rotten smell, could not breathe"
+50,5,The website is not loading when I check the timetable,The website is not loading when I check the timetable,The website is not loading when I check the timetable,The website is not loading when I check the timetable
+51,5,Bus stop er nam likha nai,Bus stop er nam likha nai,the bus stop name sign is missing,the bus stop name sign is missing
+52,1,I paid the fare but got no ticket,I paid the fare but got no ticket,I paid the fare but got no ticket,I paid the fare but got no ticket
+53,4,"Too many people standing, the service is poor","Too many people standing, the service is poor","Too many people standing, the service is poor","Too many people standing, the service is poor"
+54,1,The conductor charged me 50 taka for a 20 taka ticket,The conductor charged me 50 taka for a 20 taka ticket,The conductor charged me 50 taka money for a 20 taka money ticket,The conductor charged me 50 taka money for a 20 taka money ticket
+55,0,Buses never follow the schedule on this route,Buses never follow the schedule on this route,Buses never follow the schedule on this route,Buses never follow the schedule on this route
+56,2,Chhinatai er chesta hoise bus e,Chhinatai er chesta hoise bus e,there was a snatching and robbery attempt on the bus,there was a snatching and robbery attempt on the bus
+57,3,Kew bus porishkar kore na,Kew bus porishkar kore na,nobody cleans the bus,nobody cleans the bus
+58,0,"Shokal e bus pawa i jay na, onek wait korte hoy","Shokal e bus pawa i jay na, onek wait korte hoy","cannot find a bus in the morning, have to wait a long time","cannot find a bus in the morning, have to wait a long time"
+59,4,"AC bondho chilo, dom bondho hoye jacchilo","AC bondho chilo, dom bondho hoye jacchilo",the AC was off and it was suffocating and hot,the AC was off and it was suffocating and hot
+60,4,Driver refused to stop at my stop,Driver refused to stop at my stop,Driver refused to stop at my stop,Driver refused to stop at my stop
