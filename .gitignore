@@ -1,11 +1,28 @@
-# Python bytecode
+# Python bytecode & build artifacts
 __pycache__/
 *.py[cod]
 *$py.class
+catboost_info/
 
-# Binary embedding & logit caches (reproducible from scripts)
-experiments/cache/*.npz
-
-# Jupyter / environment secrets
+# Jupyter & environment secrets
 .ipynb_checkpoints/
 .env
+
+# Binary checkpoints, feature caches & packaging archives (reproducible from code)
+*.pt
+*.pth
+*.joblib
+*.npz
+*.npy
+*.zip
+experiments/cache/*.npz
+preli/cache/
+preli/v2/cache/
+
+# Large dataset inputs & generated 500k prediction CSVs (keep tiny sample.csv only)
+Main Preli Round/dataset/test.csv
+Main Preli Round/dataset/sample_submission.csv
+Main Preli Round/Their Email.pdf
+preli/*.csv
+preli/**/*.csv
+final_package_turtlers/submission.csv
