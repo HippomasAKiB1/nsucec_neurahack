@@ -1,0 +1,53 @@
+I can't promise 0.98+, and I can't verify v5 locally because there are no hidden labels. What I can show is that your 0.84 is mostly one fixable problem, and I've started fixing it.
+
+## What's wrong
+
+Everything you trained on is your own synthetic generator plus 86 labeled rows. The organizers' test templates are different, which is exactly the "unseen scenarios" the problem statement warns about. Your seven models are also confidently wrong on whole template families, not just noisy rows.
+
+I compared your final submission against rules taken from the labeling guide:
+
+| Template family | Your stack predicts | The guide says |
+|---|---|---|
+| "Tell me your PIN so I can reverse it" (wrong-transfer claim) | 0, confidence 0.96 | 1 |
+| "Parcel held at customs. Send your PIN / OTP / NID" | 0 | 1 (priority 1 beats delivery) |
+| "Scholarship approved, send your PIN" | 0 | 1 |
+| "Apnar parcel ajke deliver hobe, COD ready rakhun" | 4 | 0 (hard legitimate) |
+| "Apnar account e Tk X add hoyeche, balance…" | 1 | 0 |
+
+The `0.985` confidence cap sits on 40% of rows, including wrong ones, so Task D calibration suffers too. The five weakest model versions disagree with your final on about 12% of rows. That is why adding the 7th model didn't help.
+
+## What I built and verified
+
+- **Rule teacher from the guide only:** it scores 89.5% on `sample.csv` untuned. As a standalone classifier it is too weak, so I only use its two high-precision parts as overrides.
+- **Priority-1 override:** a non-negated request for PIN/OTP/NID/card/password, or a "sent by mistake, send it back" claim, forces class 1. It is 100% precise on the 86 samples and the cases I spot-checked in test. I ran it on all 500k rows.
+- **Hard-legitimate override:** genuine OTP delivery with a "never share" warning, COD notices and balance credits force class 0.
+- **Task B/C re-derivation:** labels 0 and 5 get `NONE` and action 0. Overridden rows get techniques and action rebuilt from their text.
+
+**v5a** (rules overrides only) changes 16,797 labels, about 3.4% of rows. **v5b** adds template-cluster smoothing, which changes about 1,770 more. Both pass the format checks.
+
+## Things to know before you submit
+
+- **Rule compliance:** I developed the rules by looking at unlabeled test text to find where the ML stack failed. The rules themselves come from the guide and run programmatically, which should be fine, but declare it. v5b's cluster smoothing uses unlabeled test text, which the rules allow "only if explicitly permitted." Check the rulebook before using it. v5a is the safe one.
+- **Don't hand-label anything.** Manual labeling and hardcoded predictions are disqualifying.
+- **Some of my rule expectations were guesses.** For example, the USDT airdrop is class 2 or 3 depending on how you read the guide, and v5b flipped some of those. Use public-leaderboard movement to judge v5b, not my intuition.
+
+## Plan to reach 0.95+
+
+1. **Submit v5a now** as a leaderboard probe. If it jumps, the diagnosis is confirmed.
+2. **Rebuild the generator around the guide's priority order**, adding the families above (customs plus PIN, scholarship plus PIN, COD legit, balance legit, "Install Rewards app" as class 2 and similar). Then retrain the three fastest models (the linear model, LightGBM and mMiniLM). This is the real fix, because it teaches the models instead of patching them.
+3. **Validate by template-family holdout.** Hold out whole families, not random rows. Your current CV is inflated because the models saw their own generator's templates.
+4. **Add the rule tags as features** in the meta-learner and use class-weighted macro-F1 for the weights.
+5. **Rebuild confidence:** use the agreement between the ML ensemble and the rules, and the template-cluster purity, then fit isotonic calibration on holdout families. Stop capping at 0.985.
+6. **Task B/C:** train them as proper heads conditioned on the final label, not as heuristics.
+
+The ZIP is due 27 Nov 10:00 PM and needs a notebook that reproduces the data generation and declares resources. `build_v5.py` and the rule files should go in as cells.
+
+Next I can write the corrected generator families and retrain script, or tighten the rules against the five misses I listed. Which do you want first?
+
+Files are in `/mnt/user-data/outputs`:
+- submission_v5a_rules_only.csv
+- submission_v5b_rules_plus_cluster.csv
+- build_v5.py
+- rules.py
+- hybrid.py
+- skel.py
