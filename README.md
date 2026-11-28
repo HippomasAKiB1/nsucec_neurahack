@@ -5,6 +5,7 @@
 **Team `Turtlers`:** Akib Hasan Pyil · K M Mubin · Abdullah Omar Faruk
 
 > **Quick Links for Viewers & Reviewers:**
+> - **Post-Mortem & Future Datathon Playbook (Lessons Learned + `0.99`-Tier Architecture):** [POSTMORTEM_AND_PLAYBOOK.md](POSTMORTEM_AND_PLAYBOOK.md)
 > - **Interactive Self-Contained Notebook (with Live Outputs):** [final_package_turtlers/notebook.ipynb](final_package_turtlers/notebook.ipynb)
 > - **Technical Verification & Resource Declarations:** [final_package_turtlers/README.md](final_package_turtlers/README.md)
 > - **Final Production Pipeline (`v2` + `v8/v9` Hotfixes):** [preli/v2/](preli/v2/)
@@ -78,6 +79,11 @@ Seeing `v7` (`0.93177`) barely beat tabular `v5` (`0.93011`) with only 23 minute
 
 In the final 20 minutes, [build_v8_hotfix.py](preli/v2/build_v8_hotfix.py) normalized all `500k` texts with `clean_v8`, re-scored `28,000` repaired rows live on GPU with `mMiniLM`, and fixed `T1`/Brier calibration -> jumping **`0.93177 -> 0.93552`**. Five minutes before close, [build_v9_final.py](preli/v2/build_v9_final.py) patched `480` remaining double-article reward/job & concatenated OTP/PIN cases -> closing at **`0.93661`**.
 
+### Chapter 6 — Outcome, Rule-1 Post-Mortem & Future Playbook
+Despite finishing at **`0.93661`** Public LB, Team `Turtlers` did **not** qualify for the finals. Under the organizers' Official Clarification, **pseudo-labeling, clustering-based labeling, and domain adaptation on `test.csv` were strictly prohibited (Rule 1)**, whereas **direct LLM API inference on test records (Rule 2)** and **LLM-generated synthetic training data (Rule 3)** were permitted. Because our `v7–v9` student pipeline trained on `39,618` pseudo-labeled `test.csv` prototypes (`domain_pseudo_v5`), it failed Rule 1 compliance and hit a local-capacity ceiling compared to compliant frontier LLM-hybrid systems (`0.98–0.99+`).
+
+Read the full technical breakdown and reusable competition playbook in **[POSTMORTEM_AND_PLAYBOOK.md](POSTMORTEM_AND_PLAYBOOK.md)**.
+
 ---
 
 ## System Architecture
@@ -122,6 +128,7 @@ Final `500,000`-row `submission_v9_final.csv` verification (`ALL ASSERTIONS PASS
 ```text
 nsucec_neurahackl/
 ├── README.md                          # Project storyline, architecture & benchmark overview
+├── POSTMORTEM_AND_PLAYBOOK.md         # Honest Rule-1 post-mortem & 0.99-tier LLM-hybrid playbook
 ├── final_package_turtlers/            # Section 9.2 reproducible final submission package
 │   ├── notebook.ipynb                 # Self-contained 37-cell notebook (0 execution errors)
 │   └── README.md                      # Team Turtlers compliance, seeds & model declarations
